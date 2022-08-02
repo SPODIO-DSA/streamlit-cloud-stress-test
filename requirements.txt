@@ -20,3 +20,10 @@ python-dotenv==0.20.0
 google-cloud-storage==2.4.0
 
 cffi==1.15.0
+
+plotly
+praw
+sentence_transformers
+tensorflow
+bertopic
+pytrends

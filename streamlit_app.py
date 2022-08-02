@@ -4,6 +4,22 @@ import math
 import pandas as pd
 import streamlit as st
 
+import tensorflow as tf
+import plotly.express as px
+from pytrends.request import TrendReq
+from sentence_transformers import SentenceTransformer
+from bertopic import BERTopic
+
+from sklearn.feature_extraction.text import CountVectorizer
+
+emb_model = SentenceTransformer("microsoft/xtremedistil-l6-h256-uncased")
+
+topic_model = BERTopic(
+    embedding_model="microsoft/xtremedistil-l6-h256-uncased",
+    nr_topics="auto",
+    vectorizer_model=CountVectorizer(ngram_range=(2, 3), stop_words="english"),
+)
+
 """
 # Welcome to Streamlit!
 
