@@ -21,9 +21,10 @@ google-cloud-storage==2.4.0
 
 cffi==1.15.0
 
-plotly
-praw
-sentence_transformers
-tensorflow
-bertopic
-pytrends
+sentence-transformers==2.2.2
+sentencepiece==0.1.96
+tensorflow==2.9.1
+plotly==5.9.0
+praw==7.6.0
+pytrends==4.8.0
+bertopic==0.11.0
